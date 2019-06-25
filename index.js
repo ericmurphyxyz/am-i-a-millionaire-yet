@@ -29,14 +29,11 @@ var calculateRates = value => {
       li.classList.add('millionaire');
     }
 
-    var text = document.createTextNode(
-      `${country.emoji} ${country.currencyId} is the currency, ${(
-        country.rate * value
-      )
-        .toFixed(2)
-        .replace(/\d(?=(\d{3})+\.)/g, '$&,')} is the amount in EUR`,
-    );
-    li.appendChild(text);
+    li.innerHTML = `${country.emoji} <strong>${(country.rate * value)
+      .toFixed(2)
+      .replace(/\d(?=(\d{3})+\.)/g, '$&,')} ${country.currencyId}</strong> in ${
+      country.name
+    } (${country.currencyName})`;
     list.appendChild(li);
   });
 };

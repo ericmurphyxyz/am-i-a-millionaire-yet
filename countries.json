@@ -96,13 +96,14 @@
       "id": "DM",
       "name": "Dominica"
     },
-    "FI": {
-      "alpha3": "FIN",
+    "EU": {
+      "alpha3": "EUR",
       "currencyId": "EUR",
       "currencyName": "European euro",
       "currencySymbol": "€",
-      "id": "FI",
-      "name": "Finland"
+      "id": "EUR",
+      "name": "Europe",
+      "emoji": "🇪🇺"
     },
     "GE": {
       "currencyId": "GEL",
@@ -176,14 +177,6 @@
       "currencySymbol": "L",
       "emoji": "🇱🇸"
     },
-    "LU": {
-      "alpha3": "LUX",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "LU",
-      "name": "Luxembourg"
-    },
     "MY": {
       "alpha3": "MYS",
       "currencyId": "MYR",
@@ -247,14 +240,6 @@
       "currencySymbol": "K",
       "emoji": "🇵🇬"
     },
-    "PT": {
-      "alpha3": "PRT",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "PT",
-      "name": "Portugal"
-    },
     "RW": {
       "currencyId": "RWF",
       "currencyName": "Rwandan franc",
@@ -281,22 +266,6 @@
       "id": "RS",
       "name": "Serbia",
       "emoji": "🇷🇸"
-    },
-    "SI": {
-      "alpha3": "SVN",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "SI",
-      "name": "Slovenia"
-    },
-    "ES": {
-      "alpha3": "ESP",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "ES",
-      "name": "Spain"
     },
     "SE": {
       "alpha3": "SWE",
@@ -441,14 +410,6 @@
       "id": "CZ",
       "name": "Czech Republic",
       "emoji": "🇨🇿"
-    },
-    "EE": {
-      "alpha3": "EST",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "EE",
-      "name": "Estonia"
     },
     "PF": {
       "currencyId": "XPF",
@@ -670,15 +631,6 @@
       "currencySymbol": "Bs",
       "emoji": "🇻🇪"
     },
-    "AD": {
-      "alpha3": "AND",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "AD",
-      "name": "Andorra",
-      "emoji": "🇦🇩"
-    },
     "AM": {
       "currencyId": "AMD",
       "currencyName": "Armenian dram",
@@ -696,14 +648,6 @@
       "id": "BS",
       "name": "Bahamas",
       "emoji": "🇧🇸"
-    },
-    "BE": {
-      "alpha3": "BEL",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "BE",
-      "name": "Belgium"
     },
     "BA": {
       "alpha3": "BIH",
@@ -866,14 +810,6 @@
       "currencySymbol": "Ar",
       "emoji": "🇲🇬"
     },
-    "MT": {
-      "alpha3": "MLT",
-      "currencyId": "EUR",
-      "currencyName": "European Euro",
-      "currencySymbol": "€",
-      "id": "MT",
-      "name": "Malta"
-    },
     "MD": {
       "currencyId": "MDL",
       "currencyName": "Moldovan leu",
@@ -1026,14 +962,6 @@
       "id": "AG",
       "name": "Antigua and Barbuda"
     },
-    "AT": {
-      "alpha3": "AUT",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "AT",
-      "name": "Austria"
-    },
     "BB": {
       "alpha3": "BRB",
       "currencyId": "BBD",
@@ -1087,14 +1015,6 @@
       "currencySymbol": "Fr",
       "emoji": "🇨🇩"
     },
-    "CY": {
-      "alpha3": "CYP",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "CY",
-      "name": "Cyprus"
-    },
     "DO": {
       "alpha3": "DOM",
       "currencyId": "DOP",
@@ -1112,22 +1032,6 @@
       "id": "ER",
       "currencySymbol": "Nfk",
       "emoji": "🇪🇷"
-    },
-    "FR": {
-      "alpha3": "FRA",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "FR",
-      "name": "France"
-    },
-    "DE": {
-      "alpha3": "DEU",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "DE",
-      "name": "Germany"
     },
     "GT": {
       "alpha3": "GTM",
@@ -1155,14 +1059,6 @@
       "id": "ID",
       "name": "Indonesia",
       "emoji": "🇮🇩"
-    },
-    "IT": {
-      "alpha3": "ITA",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "IT",
-      "name": "Italy"
     },
     "KE": {
       "alpha3": "KEN",
@@ -1218,14 +1114,6 @@
       "name": "Mexico",
       "emoji": "🇲🇽"
     },
-    "ME": {
-      "alpha3": "MNE",
-      "currencyId": "EUR",
-      "currencyName": "European Euro",
-      "currencySymbol": "€",
-      "id": "ME",
-      "name": "Montenegro"
-    },
     "NA": {
       "alpha3": "NAM",
       "currencyId": "NAD",
@@ -1270,14 +1158,6 @@
       "id": "SH",
       "name": "Saint Helena",
       "emoji": "🇸🇭"
-    },
-    "SM": {
-      "alpha3": "SMR",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "SM",
-      "name": "San Marino"
     },
     "SC": {
       "alpha3": "SYC",
@@ -1468,14 +1348,6 @@
       "currencySymbol": "D",
       "emoji": "🇬🇲"
     },
-    "GR": {
-      "alpha3": "GRC",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "GR",
-      "name": "Greece"
-    },
     "GY": {
       "alpha3": "GUY",
       "currencyId": "GYD",
@@ -1493,14 +1365,6 @@
       "id": "IS",
       "name": "Iceland",
       "emoji": "🇮🇸"
-    },
-    "IE": {
-      "alpha3": "IRL",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "IE",
-      "name": "Ireland"
     },
     "JO": {
       "currencyId": "JOD",
@@ -1547,14 +1411,6 @@
       "currencySymbol": "UM",
       "emoji": "🇲🇷"
     },
-    "MC": {
-      "alpha3": "MCO",
-      "currencyId": "EUR",
-      "currencyName": "European Euro",
-      "currencySymbol": "€",
-      "id": "MC",
-      "name": "Monaco"
-    },
     "MZ": {
       "currencyId": "MZN",
       "currencyName": "Mozambican metical",
@@ -1563,14 +1419,6 @@
       "id": "MZ",
       "currencySymbol": "MT",
       "emoji": "🇲🇿"
-    },
-    "NL": {
-      "alpha3": "NLD",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "NL",
-      "name": "Netherlands"
     },
     "NG": {
       "alpha3": "NGA",
@@ -1625,14 +1473,6 @@
       "id": "SN",
       "currencySymbol": "Fr",
       "emoji": "🇸🇳"
-    },
-    "SK": {
-      "alpha3": "SVK",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "SK",
-      "name": "Slovakia"
     },
     "SS": {
       "currencyId": "SDG",
@@ -1697,13 +1537,14 @@
       "currencySymbol": "Fr",
       "emoji": "🇼🇫"
     },
-    "LT": {
-      "alpha3": "LTU",
-      "currencyId": "EUR",
-      "currencyName": "European euro",
-      "currencySymbol": "€",
-      "id": "LT",
-      "name": "Lithuania"
+    "BTC": {
+      "currencyId": "BTC",
+      "currencyName": "Bitcoin",
+      "name": "Bitcoin",
+      "alpha3": "BTC",
+      "id": "BTC",
+      "currencySymbol": "₿",
+      "emoji": "₿"
     }
   }
 }

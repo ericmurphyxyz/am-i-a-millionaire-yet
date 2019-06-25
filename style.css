@@ -1,3 +1,18 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+}
+
 .millionaire {
   color: green;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }

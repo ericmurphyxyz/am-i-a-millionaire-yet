@@ -4,6 +4,7 @@ const {rates, date} = require('./latest.json');
 const {results: countries} = require('./countries.json');
 
 const newArray = [];
+const usdRate = rates.USD;
 
 for (const country in countries) {
   // destructure variables from each country
@@ -11,7 +12,9 @@ for (const country in countries) {
     country
   ];
 
-  const rate = rates[currencyId];
+  // convert rates to USD
+  const rate = rates[currencyId] / usdRate;
+  // make an object for each country
   const countryObject = {
     name,
     rate,
@@ -23,5 +26,4 @@ for (const country in countries) {
   newArray.push(countryObject);
 }
 
-console.log(newArray);
 fs.writeFileSync('list.json', JSON.stringify(newArray), {encoding: 'utf8'});

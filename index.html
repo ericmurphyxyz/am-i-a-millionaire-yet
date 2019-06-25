@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <title>Am I a Millionaire Yet?</title>
-</head>
-<body>
-  <header>
-    <h1>Am I a Millionaire Yet?</h1>
-    <label for="net-worth">What's your net worth?</label>
-    <input type="number" id="net-worth" placeholder="$1,000" />
-    <button id="submit">Calculate</button>
-  </header>
-  <div>
-    <ul id="currency-list">
-    </ul> 
-  </div>
-  <script type="text/javascript" src="./index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Am I a Millionaire Yet?</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Am I a Millionaire Yet?</h1>
+        <p>
+          Enter your net worth in USD 🇺🇸 and find out when you'll be a
+          millionaire in currencies all over the world
+        </p>
+        <label for="net-worth">What's your net worth?</label>
+        <input type="number" id="net-worth" placeholder="$1,000" />
+        <button id="submit">Calculate</button>
+      </header>
+      <div>
+        <p>If you converted your money, you'd have . . .</p>
+        <ul id="currency-list"></ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
-
