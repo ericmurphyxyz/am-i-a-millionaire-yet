@@ -110,7 +110,8 @@
       "name": "Georgia",
       "alpha3": "GEO",
       "id": "GE",
-      "currencySymbol": "₾"
+      "currencySymbol": "₾",
+      "emoji": "🇬🇪"
     },
     "GD": {
       "alpha3": "GRD",
@@ -118,7 +119,8 @@
       "currencyName": "East Caribbean dollar",
       "currencySymbol": "$",
       "id": "GD",
-      "name": "Grenada"
+      "name": "Grenada",
+      "emoji": "🇬🇩"
     },
     "HT": {
       "currencyId": "HTG",
@@ -126,7 +128,8 @@
       "name": "Haiti",
       "alpha3": "HTI",
       "id": "HT",
-      "currencySymbol": "G"
+      "currencySymbol": "G",
+      "emoji": "🇭🇹"
     },
     "IN": {
       "alpha3": "IND",
@@ -134,7 +137,8 @@
       "currencyName": "Indian rupee",
       "currencySymbol": "₹",
       "id": "IN",
-      "name": "India"
+      "name": "India",
+      "emoji": "🇮🇳"
     },
     "IL": {
       "alpha3": "ISR",
@@ -142,7 +146,8 @@
       "currencyName": "Israeli new sheqel",
       "currencySymbol": "₪",
       "id": "IL",
-      "name": "Israel"
+      "name": "Israel",
+      "emoji": "🇮🇱"
     },
     "KZ": {
       "alpha3": "KAZ",
@@ -150,7 +155,8 @@
       "currencyName": "Kazakhstani tenge",
       "currencySymbol": "лв",
       "id": "KZ",
-      "name": "Kazakhstan"
+      "name": "Kazakhstan",
+      "emoji": "🇰🇿"
     },
     "KW": {
       "currencyId": "KWD",
@@ -158,7 +164,8 @@
       "name": "Kuwait",
       "alpha3": "KWT",
       "id": "KW",
-      "currencySymbol": "د.ك"
+      "currencySymbol": "د.ك",
+      "emoji": "🇰🇼"
     },
     "LS": {
       "currencyId": "LSL",
@@ -166,7 +173,8 @@
       "name": "Lesotho",
       "alpha3": "LSO",
       "id": "LS",
-      "currencySymbol": "L"
+      "currencySymbol": "L",
+      "emoji": "🇱🇸"
     },
     "LU": {
       "alpha3": "LUX",
@@ -182,7 +190,8 @@
       "currencyName": "Malaysian ringgit",
       "currencySymbol": "RM",
       "id": "MY",
-      "name": "Malaysia"
+      "name": "Malaysia",
+      "emoji": "🇲🇾"
     },
     "MU": {
       "alpha3": "MUS",
@@ -190,7 +199,8 @@
       "currencyName": "Mauritian rupee",
       "currencySymbol": "₨",
       "id": "MU",
-      "name": "Mauritius"
+      "name": "Mauritius",
+      "emoji": "🇲🇷"
     },
     "MN": {
       "alpha3": "MNG",
@@ -198,7 +208,8 @@
       "currencyName": "Mongolian tugrik",
       "currencySymbol": "₮",
       "id": "MN",
-      "name": "Mongolia"
+      "name": "Mongolia",
+      "emoji": "🇲🇳"
     },
     "MM": {
       "currencyId": "MMK",
@@ -206,7 +217,8 @@
       "name": "Myanmar",
       "alpha3": "MMR",
       "id": "MM",
-      "currencySymbol": "Ks"
+      "currencySymbol": "Ks",
+      "emoji": "🇲🇲"
     },
     "NC": {
       "currencyId": "XPF",
@@ -214,7 +226,8 @@
       "name": "New Caledonia",
       "alpha3": "NCL",
       "id": "NC",
-      "currencySymbol": "Fr"
+      "currencySymbol": "Fr",
+      "emoji": "🇳🇨"
     },
     "NO": {
       "alpha3": "NOR",
@@ -222,7 +235,8 @@
       "currencyName": "Norwegian krone",
       "currencySymbol": "kr",
       "id": "NO",
-      "name": "Norway"
+      "name": "Norway",
+      "emoji": "🇳🇴"
     },
     "PG": {
       "currencyId": "PGK",
@@ -230,7 +244,8 @@
       "name": "Papua New Guinea",
       "alpha3": "PNG",
       "id": "PG",
-      "currencySymbol": "K"
+      "currencySymbol": "K",
+      "emoji": "🇵🇬"
     },
     "PT": {
       "alpha3": "PRT",
@@ -246,7 +261,8 @@
       "name": "Rwanda",
       "alpha3": "RWA",
       "id": "RW",
-      "currencySymbol": "Fr"
+      "currencySymbol": "Fr",
+      "emoji": "🇷🇼"
     },
     "WS": {
       "currencyId": "WST",
@@ -254,7 +270,8 @@
       "name": "Samoa (Western)",
       "alpha3": "WSM",
       "id": "WS",
-      "currencySymbol": "T"
+      "currencySymbol": "T",
+      "emoji": "🇼🇸"
     },
     "RS": {
       "alpha3": "SRB",
@@ -262,7 +279,8 @@
       "currencyName": "Serbian dinar",
       "currencySymbol": "Дин.",
       "id": "RS",
-      "name": "Serbia"
+      "name": "Serbia",
+      "emoji": "🇷🇸"
     },
     "SI": {
       "alpha3": "SVN",
@@ -286,7 +304,8 @@
       "currencyName": "Swedish krona",
       "currencySymbol": "kr",
       "id": "SE",
-      "name": "Sweden"
+      "name": "Sweden",
+      "emoji": "🇸🇪"
     },
     "TZ": {
       "alpha3": "TZA",
@@ -294,7 +313,8 @@
       "currencyName": "Tanzanian shilling",
       "currencySymbol": "TSh",
       "id": "TZ",
-      "name": "Tanzania"
+      "name": "Tanzania",
+      "emoji": "🇹🇿"
     },
     "TN": {
       "currencyId": "TND",
@@ -302,7 +322,8 @@
       "name": "Tunisia",
       "alpha3": "TUN",
       "id": "TN",
-      "currencySymbol": "ملّيم"
+      "currencySymbol": "ملّيم",
+      "emoji": "🇹🇳"
     },
     "UA": {
       "alpha3": "UKR",
@@ -310,7 +331,8 @@
       "currencyName": "Ukrainian hryvnia",
       "currencySymbol": "₴",
       "id": "UA",
-      "name": "Ukraine"
+      "name": "Ukraine",
+      "emoji": "🇺🇦"
     },
     "UZ": {
       "alpha3": "UZB",
@@ -318,7 +340,8 @@
       "currencyName": "Uzbekistani som",
       "currencySymbol": "лв",
       "id": "UZ",
-      "name": "Uzbekistan"
+      "name": "Uzbekistan",
+      "emoji": "🇺🇿"
     },
     "YE": {
       "alpha3": "YEM",
@@ -326,7 +349,8 @@
       "currencyName": "Yemeni rial",
       "currencySymbol": "﷼",
       "id": "YE",
-      "name": "Yemen"
+      "name": "Yemen",
+      "emoji": "🇾🇪"
     },
     "DZ": {
       "currencyId": "DZD",
@@ -334,7 +358,8 @@
       "name": "Algeria",
       "alpha3": "DZA",
       "id": "DZ",
-      "currencySymbol": "د.ج"
+      "currencySymbol": "د.ج",
+      "emoji": "🇩🇿"
     },
     "AR": {
       "alpha3": "ARG",
@@ -342,7 +367,8 @@
       "currencyName": "Argentine peso",
       "currencySymbol": "$",
       "id": "AR",
-      "name": "Argentina"
+      "name": "Argentina",
+      "emoji": "🇦🇷"
     },
     "AZ": {
       "alpha3": "AZE",
@@ -350,7 +376,8 @@
       "currencyName": "Azerbaijani manat",
       "currencySymbol": "ман",
       "id": "AZ",
-      "name": "Azerbaijan"
+      "name": "Azerbaijan",
+      "emoji": "🇦🇿"
     },
     "BY": {
       "alpha3": "BLR",
@@ -358,7 +385,8 @@
       "currencyName": "New Belarusian ruble",
       "currencySymbol": "p.",
       "id": "BY",
-      "name": "Belarus"
+      "name": "Belarus",
+      "emoji": "🇧🇾"
     },
     "BO": {
       "alpha3": "BOL",
@@ -366,7 +394,8 @@
       "currencyName": "Bolivian boliviano",
       "currencySymbol": "$b",
       "id": "BO",
-      "name": "Bolivia"
+      "name": "Bolivia",
+      "emoji": "🇧🇴"
     },
     "BG": {
       "alpha3": "BGR",
@@ -374,7 +403,8 @@
       "currencyName": "Bulgarian lev",
       "currencySymbol": "лв",
       "id": "BG",
-      "name": "Bulgaria"
+      "name": "Bulgaria",
+      "emoji": "🇧🇬"
     },
     "CA": {
       "alpha3": "CAN",
@@ -382,7 +412,8 @@
       "currencyName": "Canadian dollar",
       "currencySymbol": "$",
       "id": "CA",
-      "name": "Canada"
+      "name": "Canada",
+      "emoji": "🇨🇦"
     },
     "CN": {
       "alpha3": "CHN",
@@ -390,7 +421,8 @@
       "currencyName": "Chinese renminbi",
       "currencySymbol": "¥",
       "id": "CN",
-      "name": "China"
+      "name": "China",
+      "emoji": "🇨🇳"
     },
     "CR": {
       "alpha3": "CRI",
@@ -398,7 +430,8 @@
       "currencyName": "Costa Rican colon",
       "currencySymbol": "₡",
       "id": "CR",
-      "name": "Costa Rica"
+      "name": "Costa Rica",
+      "emoji": "🇨🇷"
     },
     "CZ": {
       "alpha3": "CZE",
@@ -406,15 +439,8 @@
       "currencyName": "Czech koruna",
       "currencySymbol": "Kč",
       "id": "CZ",
-      "name": "Czech Republic"
-    },
-    "EC": {
-      "alpha3": "ECU",
-      "currencyId": "USD",
-      "currencyName": "U.S. Dollar",
-      "currencySymbol": "$",
-      "id": "EC",
-      "name": "Ecuador"
+      "name": "Czech Republic",
+      "emoji": "🇨🇿"
     },
     "EE": {
       "alpha3": "EST",
@@ -438,7 +464,8 @@
       "name": "Ghana",
       "alpha3": "GHA",
       "id": "GH",
-      "currencySymbol": "₵"
+      "currencySymbol": "₵",
+      "emoji": "🇬🇭"
     },
     "GN": {
       "currencyId": "GNF",
@@ -446,7 +473,8 @@
       "name": "Guinea",
       "alpha3": "GIN",
       "id": "GN",
-      "currencySymbol": "Fr"
+      "currencySymbol": "Fr",
+      "emoji": "🇬🇳"
     },
     "HK": {
       "alpha3": "HKG",
@@ -463,7 +491,8 @@
       "currencyName": "Iranian rial",
       "currencySymbol": "﷼",
       "id": "IR",
-      "name": "Iran, Islamic Republic of"
+      "name": "Iran, Islamic Republic of",
+      "emoji": "🇮🇷"
     },
     "JM": {
       "alpha3": "JAM",
@@ -471,15 +500,8 @@
       "currencyName": "Jamaican dollar",
       "currencySymbol": "J$",
       "id": "JM",
-      "name": "Jamaica"
-    },
-    "KI": {
-      "alpha3": "KIR",
-      "currencyId": "AUD",
-      "currencyName": "Australian dollar",
-      "currencySymbol": "$",
-      "id": "KI",
-      "name": "Kiribati"
+      "name": "Jamaica",
+      "emoji": "🇯🇲"
     },
     "LA": {
       "alpha3": "LAO",
@@ -487,7 +509,8 @@
       "currencyName": "Lao kip",
       "currencySymbol": "₭",
       "id": "LA",
-      "name": "Laos"
+      "name": "Laos",
+      "emoji": "🇱🇦"
     },
     "LY": {
       "currencyId": "LYD",
@@ -495,7 +518,8 @@
       "name": "Libya",
       "alpha3": "LBY",
       "id": "LY",
-      "currencySymbol": "ل.د"
+      "currencySymbol": "ل.د",
+      "emoji": "🇱🇾"
     },
     "MK": {
       "alpha3": "MKD",
@@ -503,7 +527,8 @@
       "currencyName": "Macedonian denar",
       "currencySymbol": "ден",
       "id": "MK",
-      "name": "Macedonia (Former Yug. Rep.)"
+      "name": "Macedonia (Former Yug. Rep.)",
+      "emoji": "🇲🇰"
     },
     "ML": {
       "currencyId": "XOF",
@@ -513,14 +538,6 @@
       "id": "ML",
       "currencySymbol": "Fr"
     },
-    "FM": {
-      "alpha3": "FSM",
-      "currencyId": "USD",
-      "currencyName": "U.S. Dollar",
-      "currencySymbol": "$",
-      "id": "FM",
-      "name": "Micronesia"
-    },
     "MS": {
       "alpha3": "MSR",
       "currencyId": "XCD",
@@ -529,21 +546,14 @@
       "id": "MS",
       "name": "Montserrat"
     },
-    "NR": {
-      "alpha3": "NRU",
-      "currencyId": "AUD",
-      "currencyName": "Australian dollar",
-      "currencySymbol": "$",
-      "id": "NR",
-      "name": "Nauru"
-    },
     "NI": {
       "alpha3": "NIC",
       "currencyId": "NIO",
       "currencyName": "Nicaraguan cordoba",
       "currencySymbol": "C$",
       "id": "NI",
-      "name": "Nicaragua"
+      "name": "Nicaragua",
+      "emoji": "🇳🇮"
     },
     "PK": {
       "alpha3": "PAK",
@@ -551,7 +561,8 @@
       "currencyName": "Pakistani rupee",
       "currencySymbol": "₨",
       "id": "PK",
-      "name": "Pakistan"
+      "name": "Pakistan",
+      "emoji": "🇵🇰"
     },
     "PE": {
       "alpha3": "PER",
@@ -559,7 +570,8 @@
       "currencyName": "Peruvian nuevo sol",
       "currencySymbol": "S/.",
       "id": "PE",
-      "name": "Peru"
+      "name": "Peru",
+      "emoji": "🇵🇪"
     },
     "QA": {
       "alpha3": "QAT",
@@ -567,7 +579,8 @@
       "currencyName": "Qatari riyal",
       "currencySymbol": "﷼",
       "id": "QA",
-      "name": "Qatar"
+      "name": "Qatar",
+      "emoji": "🇶🇦"
     },
     "KN": {
       "alpha3": "KNA",
@@ -583,7 +596,8 @@
       "name": "Sao Tome and Principe",
       "alpha3": "STP",
       "id": "ST",
-      "currencySymbol": "Db"
+      "currencySymbol": "Db",
+      "emoji": "🇸🇹"
     },
     "SL": {
       "currencyId": "SLL",
@@ -591,7 +605,8 @@
       "name": "Sierra Leone",
       "alpha3": "SLE",
       "id": "SL",
-      "currencySymbol": "Le"
+      "currencySymbol": "Le",
+      "emoji": "🇸🇱"
     },
     "SO": {
       "alpha3": "SOM",
@@ -599,7 +614,8 @@
       "currencyName": "Somali shilling",
       "currencySymbol": "S",
       "id": "SO",
-      "name": "Somalia"
+      "name": "Somalia",
+      "emoji": "🇸🇴"
     },
     "SD": {
       "currencyId": "SDG",
@@ -607,7 +623,8 @@
       "name": "Sudan",
       "alpha3": "SDN",
       "id": "SD",
-      "currencySymbol": "ج.س."
+      "currencySymbol": "ج.س.",
+      "emoji": "🇸🇩"
     },
     "SY": {
       "alpha3": "SYR",
@@ -615,7 +632,8 @@
       "currencyName": "Syrian pound",
       "currencySymbol": "£",
       "id": "SY",
-      "name": "Syria"
+      "name": "Syria",
+      "emoji": "🇸🇾"
     },
     "TG": {
       "currencyId": "XOF",
@@ -631,7 +649,8 @@
       "name": "Turkmenistan",
       "alpha3": "TKM",
       "id": "TM",
-      "currencySymbol": "m"
+      "currencySymbol": "m",
+      "emoji": "🇹🇲"
     },
     "GB": {
       "alpha3": "GBR",
@@ -639,7 +658,8 @@
       "currencyName": "British pound",
       "currencySymbol": "£",
       "id": "GB",
-      "name": "United Kingdom"
+      "name": "United Kingdom",
+      "emoji": "🇬🇧"
     },
     "VE": {
       "currencyId": "VEF",
@@ -647,7 +667,8 @@
       "name": "Venezuela",
       "alpha3": "VEN",
       "id": "VE",
-      "currencySymbol": "Bs"
+      "currencySymbol": "Bs",
+      "emoji": "🇻🇪"
     },
     "AD": {
       "alpha3": "AND",
@@ -655,7 +676,8 @@
       "currencyName": "European euro",
       "currencySymbol": "€",
       "id": "AD",
-      "name": "Andorra"
+      "name": "Andorra",
+      "emoji": "🇦🇩"
     },
     "AM": {
       "currencyId": "AMD",
@@ -663,7 +685,8 @@
       "name": "Armenia",
       "alpha3": "ARM",
       "id": "AM",
-      "currencySymbol": "֏"
+      "currencySymbol": "֏",
+      "emoji": "🇦🇲"
     },
     "BS": {
       "alpha3": "BHS",
@@ -671,7 +694,8 @@
       "currencyName": "Bahamian dollar",
       "currencySymbol": "$",
       "id": "BS",
-      "name": "Bahamas"
+      "name": "Bahamas",
+      "emoji": "🇧🇸"
     },
     "BE": {
       "alpha3": "BEL",
@@ -687,7 +711,8 @@
       "currencyName": "Bosnia and Herzegovina konvertibilna marka",
       "currencySymbol": "KM",
       "id": "BA",
-      "name": "Bosnia-Herzegovina"
+      "name": "Bosnia-Herzegovina",
+      "emoji": "🇧🇦"
     },
     "BF": {
       "currencyId": "XOF",
@@ -703,7 +728,8 @@
       "currencyName": "Cayman Islands dollar",
       "currencySymbol": "$",
       "id": "KY",
-      "name": "Cayman Islands"
+      "name": "Cayman Islands",
+      "emoji": "🇰🇾"
     },
     "CO": {
       "alpha3": "COL",
@@ -711,7 +737,8 @@
       "currencyName": "Colombian peso",
       "currencySymbol": "$",
       "id": "CO",
-      "name": "Colombia"
+      "name": "Colombia",
+      "emoji": "🇨🇴"
     },
     "CI": {
       "currencyId": "XOF",
@@ -883,14 +910,6 @@
       "currencySymbol": "Fr",
       "emoji": "🇳🇪"
     },
-    "PW": {
-      "alpha3": "PLW",
-      "currencyId": "USD",
-      "currencyName": "U.S. Dollar",
-      "currencySymbol": "$",
-      "id": "PW",
-      "name": "Palau"
-    },
     "PH": {
       "alpha3": "PHL",
       "currencyId": "PHP",
@@ -972,14 +991,6 @@
       "currencySymbol": "T$",
       "emoji": "🇹🇴"
     },
-    "TV": {
-      "alpha3": "TUV",
-      "currencyId": "AUD",
-      "currencyName": "Australian dollar",
-      "currencySymbol": "$",
-      "id": "TV",
-      "name": "Tuvalu"
-    },
     "US": {
       "alpha3": "USA",
       "currencyId": "USD",
@@ -1029,7 +1040,8 @@
       "currencyName": "Barbadian dollar",
       "currencySymbol": "$",
       "id": "BB",
-      "name": "Barbados"
+      "name": "Barbados",
+      "emoji": "🇧🇧"
     },
     "BT": {
       "currencyId": "BTN",
@@ -1037,7 +1049,8 @@
       "name": "Bhutan",
       "alpha3": "BTN",
       "id": "BT",
-      "currencySymbol": "Nu."
+      "currencySymbol": "Nu.",
+      "emoji": "🇧🇹"
     },
     "BN": {
       "alpha3": "BRN",
@@ -1045,7 +1058,8 @@
       "currencyName": "Brunei dollar",
       "currencySymbol": "$",
       "id": "BN",
-      "name": "Brunei"
+      "name": "Brunei",
+      "emoji": "🇧🇳"
     },
     "CM": {
       "currencyId": "XAF",
@@ -1070,7 +1084,8 @@
       "name": "Congo, Democratic Republic",
       "alpha3": "COD",
       "id": "CD",
-      "currencySymbol": "Fr"
+      "currencySymbol": "Fr",
+      "emoji": "🇨🇩"
     },
     "CY": {
       "alpha3": "CYP",
@@ -1086,7 +1101,8 @@
       "currencyName": "Dominican peso",
       "currencySymbol": "RD$",
       "id": "DO",
-      "name": "Dominican Republic"
+      "name": "Dominican Republic",
+      "emoji": "🇩🇴"
     },
     "ER": {
       "currencyId": "ERN",
@@ -1094,7 +1110,8 @@
       "name": "Eritrea",
       "alpha3": "ERI",
       "id": "ER",
-      "currencySymbol": "Nfk"
+      "currencySymbol": "Nfk",
+      "emoji": "🇪🇷"
     },
     "FR": {
       "alpha3": "FRA",
@@ -1118,7 +1135,8 @@
       "currencyName": "Guatemalan quetzal",
       "currencySymbol": "Q",
       "id": "GT",
-      "name": "Guatemala"
+      "name": "Guatemala",
+      "emoji": "🇬🇹"
     },
     "HN": {
       "alpha3": "HND",
@@ -1126,7 +1144,8 @@
       "currencyName": "Honduran lempira",
       "currencySymbol": "L",
       "id": "HN",
-      "name": "Honduras"
+      "name": "Honduras",
+      "emoji": "🇭🇳"
     },
     "ID": {
       "alpha3": "IDN",
@@ -1134,7 +1153,8 @@
       "currencyName": "Indonesian rupiah",
       "currencySymbol": "Rp",
       "id": "ID",
-      "name": "Indonesia"
+      "name": "Indonesia",
+      "emoji": "🇮🇩"
     },
     "IT": {
       "alpha3": "ITA",
@@ -1150,7 +1170,8 @@
       "currencyName": "Kenyan shilling",
       "currencySymbol": "KSh",
       "id": "KE",
-      "name": "Kenya"
+      "name": "Kenya",
+      "emoji": "🇰🇪"
     },
     "KG": {
       "alpha3": "KGZ",
@@ -1158,7 +1179,8 @@
       "currencyName": "Kyrgyzstani som",
       "currencySymbol": "лв",
       "id": "KG",
-      "name": "Kyrgyzstan"
+      "name": "Kyrgyzstan",
+      "emoji": "🇰🇬"
     },
     "LR": {
       "alpha3": "LBR",
@@ -1166,7 +1188,8 @@
       "currencyName": "Liberian dollar",
       "currencySymbol": "$",
       "id": "LR",
-      "name": "Liberia"
+      "name": "Liberia",
+      "emoji": "🇱🇷"
     },
     "MO": {
       "currencyId": "MOP",
@@ -1174,7 +1197,8 @@
       "name": "Macau",
       "alpha3": "MAC",
       "id": "MO",
-      "currencySymbol": "P"
+      "currencySymbol": "P",
+      "emoji": "🇲🇴"
     },
     "MV": {
       "currencyId": "MVR",
@@ -1182,7 +1206,8 @@
       "name": "Maldives",
       "alpha3": "MDV",
       "id": "MV",
-      "currencySymbol": ".ރ"
+      "currencySymbol": ".ރ",
+      "emoji": "🇲🇻"
     },
     "MX": {
       "alpha3": "MEX",
@@ -1190,7 +1215,8 @@
       "currencyName": "Mexican peso",
       "currencySymbol": "$",
       "id": "MX",
-      "name": "Mexico"
+      "name": "Mexico",
+      "emoji": "🇲🇽"
     },
     "ME": {
       "alpha3": "MNE",
@@ -1206,7 +1232,8 @@
       "currencyName": "Namibian dollar",
       "currencySymbol": "$",
       "id": "NA",
-      "name": "Namibia"
+      "name": "Namibia",
+      "emoji": "🇳🇦"
     },
     "NZ": {
       "alpha3": "NZL",
@@ -1214,7 +1241,8 @@
       "currencyName": "New Zealand dollar",
       "currencySymbol": "$",
       "id": "NZ",
-      "name": "New Zealand"
+      "name": "New Zealand",
+      "emoji": "🇳🇿"
     },
     "OM": {
       "alpha3": "OMN",
@@ -1222,7 +1250,8 @@
       "currencyName": "Omani rial",
       "currencySymbol": "﷼",
       "id": "OM",
-      "name": "Oman"
+      "name": "Oman",
+      "emoji": "🇴🇲"
     },
     "PY": {
       "alpha3": "PRY",
@@ -1230,15 +1259,8 @@
       "currencyName": "Paraguayan guarani",
       "currencySymbol": "Gs",
       "id": "PY",
-      "name": "Paraguay"
-    },
-    "PR": {
-      "alpha3": "PRI",
-      "currencyId": "USD",
-      "currencyName": "U.S. Dollar",
-      "currencySymbol": "$",
-      "id": "PR",
-      "name": "Puerto Rico"
+      "name": "Paraguay",
+      "emoji": "🇵🇾"
     },
     "SH": {
       "alpha3": "SHN",
@@ -1246,7 +1268,8 @@
       "currencyName": "Saint Helena pound",
       "currencySymbol": "£",
       "id": "SH",
-      "name": "Saint Helena"
+      "name": "Saint Helena",
+      "emoji": "🇸🇭"
     },
     "SM": {
       "alpha3": "SMR",
@@ -1262,7 +1285,8 @@
       "currencyName": "Seychellois rupee",
       "currencySymbol": "₨",
       "id": "SC",
-      "name": "Seychelles"
+      "name": "Seychelles",
+      "emoji": "🇸🇨"
     },
     "SB": {
       "alpha3": "SLB",
@@ -1270,7 +1294,8 @@
       "currencyName": "Solomon Islands dollar",
       "currencySymbol": "$",
       "id": "SB",
-      "name": "Solomon Islands"
+      "name": "Solomon Islands",
+      "emoji": "🇸🇧"
     },
     "LK": {
       "alpha3": "LKA",
@@ -1278,7 +1303,8 @@
       "currencyName": "Sri Lankan rupee",
       "currencySymbol": "₨",
       "id": "LK",
-      "name": "Sri Lanka"
+      "name": "Sri Lanka",
+      "emoji": "🇱🇰"
     },
     "CH": {
       "alpha3": "CHE",
@@ -1286,7 +1312,8 @@
       "currencyName": "Swiss franc",
       "currencySymbol": "Fr.",
       "id": "CH",
-      "name": "Switzerland"
+      "name": "Switzerland",
+      "emoji": "🇨🇭"
     },
     "TH": {
       "alpha3": "THA",
@@ -1422,14 +1449,6 @@
       "id": "DJ",
       "currencySymbol": "Fr",
       "emoji": "🇩🇯"
-    },
-    "SV": {
-      "alpha3": "SLV",
-      "currencyId": "USD",
-      "currencyName": "U.S. Dollar",
-      "currencySymbol": "$",
-      "id": "SV",
-      "name": "El Salvador"
     },
     "FJ": {
       "alpha3": "FJI",
@@ -1621,7 +1640,8 @@
       "name": "South Sudan",
       "alpha3": "SSD",
       "id": "SS",
-      "currencySymbol": "£"
+      "currencySymbol": "£",
+      "emoji": "🇸🇸"
     },
     "SZ": {
       "currencyId": "SZL",
@@ -1629,7 +1649,8 @@
       "name": "Swaziland",
       "alpha3": "SWZ",
       "id": "SZ",
-      "currencySymbol": "L"
+      "currencySymbol": "L",
+      "emoji": "🇸🇿"
     },
     "TJ": {
       "currencyId": "TJS",
@@ -1637,7 +1658,8 @@
       "name": "Tajikistan",
       "alpha3": "TJK",
       "id": "TJ",
-      "currencySymbol": "ЅМ"
+      "currencySymbol": "ЅМ",
+      "emoji": "🇹🇯"
     },
     "TT": {
       "alpha3": "TTO",
@@ -1645,7 +1667,8 @@
       "currencyName": "Trinidad and Tobago dollar",
       "currencySymbol": "TT$",
       "id": "TT",
-      "name": "Trinidad and Tobago"
+      "name": "Trinidad and Tobago",
+      "emoji": "🇹🇹"
     },
     "UG": {
       "alpha3": "UGA",
@@ -1653,6 +1676,7 @@
       "currencyName": "Ugandan shilling",
       "currencySymbol": "USh",
       "id": "UG",
+      "emoji": "🇺🇬",
       "name": "Uganda"
     },
     "UY": {
@@ -1661,7 +1685,8 @@
       "currencyName": "Uruguayan peso",
       "currencySymbol": "$U",
       "id": "UY",
-      "name": "Uruguay"
+      "name": "Uruguay",
+      "emoji": "🇺🇾"
     },
     "WF": {
       "currencyId": "XPF",
@@ -1669,7 +1694,8 @@
       "name": "Wallis and Futuna Islands",
       "alpha3": "WLF",
       "id": "WF",
-      "currencySymbol": "Fr"
+      "currencySymbol": "Fr",
+      "emoji": "🇼🇫"
     },
     "LT": {
       "alpha3": "LTU",
