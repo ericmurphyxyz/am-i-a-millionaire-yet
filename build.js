@@ -7,7 +7,9 @@ const newArray = [];
 
 for (const country in countries) {
   // destructure variables from each country
-  const {currencyId, currencyName, currencySymbol, name} = countries[country];
+  const {currencyId, currencyName, currencySymbol, name, emoji} = countries[
+    country
+  ];
 
   const rate = rates[currencyId];
   const countryObject = {
@@ -16,9 +18,10 @@ for (const country in countries) {
     currencyId,
     currencyName,
     currencySymbol,
+    emoji,
   };
   newArray.push(countryObject);
-  console.log(countryObject);
 }
 
-// console.log(countries);
+console.log(newArray);
+fs.writeFileSync('list.json', JSON.stringify(newArray), {encoding: 'utf8'});
