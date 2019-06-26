@@ -1,16 +1,18 @@
 // get elements from document
+var date = document.querySelector('#date');
 var listWrapper = document.querySelector('#currency-list-wrapper');
 var list = document.querySelector('#currency-list');
 var input = document.querySelector('#net-worth');
 var submit = document.querySelector('#submit');
 
-var data;
+var currencies;
 
 // fetch json with currency conversions
 var request = new XMLHttpRequest();
 request.addEventListener('load', function() {
   var json = JSON.parse(this.responseText);
-  data = json;
+  currencies = json.currencies;
+  date.innerHTML = json.date;
 });
 
 request.open('GET', 'list.json');
@@ -26,7 +28,7 @@ function calculateRates(value) {
   }
 
   // sort the list by how much each currency is worth . . .
-  var sortedList = data.sort(function(a, b) {
+  var sortedList = currencies.sort(function(a, b) {
     return b.rate - a.rate;
   });
 

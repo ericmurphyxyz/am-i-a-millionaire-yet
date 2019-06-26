@@ -1,6 +1,19 @@
+html {
+  font: 112.5%/1.45em georgia, serif;
+}
+
+body {
+  margin: 0;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.wrapper > div,
+.wrapper > header {
+  padding: 20px;
 }
 
 label {
@@ -10,10 +23,6 @@ label {
 
 .millionaire {
   color: green;
-}
-
-html {
-  font: 112.5%/1.45em georgia, serif;
 }
 
 h1 {
@@ -31,13 +40,4 @@ ul {
 
 .emoji {
   font-weight: 400;
-}
-
-.currency {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
-}
-
-li:hover > .currency {
-  opacity: 1;
 }

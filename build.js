@@ -3,8 +3,10 @@ const fs = require('fs');
 const {rates, date} = require('./latest.json');
 const {results: countries} = require('./countries.json');
 
-const newArray = [];
+const newObject = {};
 const usdRate = rates.USD;
+newObject.date = date;
+newObject.currencies = [];
 
 for (const country in countries) {
   // destructure variables from each country
@@ -23,7 +25,7 @@ for (const country in countries) {
     currencySymbol,
     emoji,
   };
-  newArray.push(countryObject);
+  newObject.currencies.push(countryObject);
 }
 
-fs.writeFileSync('list.json', JSON.stringify(newArray), {encoding: 'utf8'});
+fs.writeFileSync('list.json', JSON.stringify(newObject), {encoding: 'utf8'});
