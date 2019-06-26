@@ -11,6 +11,12 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
 .wrapper > div,
 .wrapper > header {
   padding: 20px;
