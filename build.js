@@ -1,6 +1,8 @@
 const fs = require('fs');
 
-const {rates, date} = require('./latest.json');
+const fixerUrl = `https://data.fixer.io/api/latest?access_key=${process.env.FIXER_API_KEY}&format=1`;
+
+const {rates, date} = require(fixerUrl);
 const {results: countries} = require('./countries.json');
 
 const newObject = {};
