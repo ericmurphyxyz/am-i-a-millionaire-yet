@@ -33,7 +33,7 @@ var calculateRates = value => {
       .toFixed(2)
       .replace(/\d(?=(\d{3})+\.)/g, '$&,')} ${country.currencyId}</strong> in ${
       country.name
-    } (${country.currencyName})`;
+    } <span class="currency">(${country.currencyName})</span>`;
     list.appendChild(li);
   });
 };

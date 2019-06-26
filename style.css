@@ -12,7 +12,32 @@ label {
   color: green;
 }
 
+html {
+  font: 112.5%/1.45em georgia, serif;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 ul {
   list-style: none;
   padding: 0;
+}
+
+.emoji {
+  font-weight: 400;
+}
+
+.currency {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+li:hover > .currency {
+  opacity: 1;
 }
