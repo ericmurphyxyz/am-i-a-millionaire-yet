@@ -10,6 +10,22 @@ exports.sourceNodes = (
     // Gatsby adds a configOption that's not needed for this plugin, delete it
     delete configOptions.plugins
 
-    // plugin code goes here...
-    console.log("Testing my plugin", configOptions)
+    // Convert the options object into a query string
+    const apiOptions = queryString.stringify(configOptions)
+    // Join apiOptions with the Pixabay API URL
+    const apiUrl = `http://data.fixer.io/api/latest?${apiOptions}`
+    // Gatsby expects sourceNodes to return a promise
+    return (
+        // Fetch a response from the apiUrl
+        fetch(apiUrl)
+            // Parse the response as JSON
+            .then(response => response.json())
+            // Process the JSON data into a node
+            .then(({ rates }) => {
+                // For each query result
+                Object.keys(rates).forEach(rate => {
+                    console.log(`${rate} rate is:`, rates[rate])
+                })
+            })
+    )
 }
