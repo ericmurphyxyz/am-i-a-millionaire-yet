@@ -39,9 +39,12 @@ exports.sourceNodes = (
       // Parse the response as JSON
       .then(response => response.json())
       .then(({ rates }) => {
+        const usdRate = rates["USD"]
+
         Object.keys(rates).forEach((currency, index) => {
+          const rateBaseUsd = rates[currency] / usdRate
           // Covert each currency/rate pair to a Gatsby Node
-          const nodeData = processRate(currency, rates[currency], index)
+          const nodeData = processRate(currency, rateBaseUsd, index)
           // Use Gatsby's createNode helper to create a node from the node data
           createNode(nodeData)
         })
