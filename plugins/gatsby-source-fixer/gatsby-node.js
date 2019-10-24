@@ -12,15 +12,19 @@ exports.sourceNodes = async (
   // Gatsby adds a configOption that's not needed for this plugin, delete it
   delete configOptions.plugins
 
-  // Helper function that processes currency/rate pairs to match Gatsby's node structure
-  const processRate = (rate, country, index) => {
+  // Helper function that processes currency/rates to match Gatsby's node structure
+  const processRate = (rate, country) => {
+    // Destructure from country object
+    const { currencyId, currencyName, emoji } = country
+
+    // Create gatsby node
     const node = {
-      currency: country.currencyId,
-      currencyName: country.currencyName,
+      currencyId,
+      currencyName,
       rate,
-      emoji: country.emoji,
+      emoji,
     }
-    const nodeId = createNodeId(`fixer-rate-${index}`)
+    const nodeId = createNodeId(`fixer-rate-${currencyId}`)
     const nodeContent = JSON.stringify(node)
     const nodeData = Object.assign({}, node, {
       id: nodeId,
@@ -37,25 +41,26 @@ exports.sourceNodes = async (
 
   // Convert the options object into a query string
   const apiOptions = queryString.stringify(configOptions)
-  // Join apiOptions with the Pixabay API URL
   const apiUrl = `http://data.fixer.io/api/latest?${apiOptions}`
-  // Gatsby expects sourceNodes to return a promise
-  // Fetch a response from the apiUrl
 
-  // get json countries data
+  // Get json countries data
   const countries = await fs.readJson(
     path.resolve(__dirname, "./countries.json")
   )
+  // Get rates from Fixer API
   const ratesResponse = await fetch(apiUrl)
   const { rates } = await ratesResponse.json()
 
+  // Get the USD rate because Fixer returns base EUR by default
   const usdRate = rates["USD"]
 
-  Object.keys(countries).forEach((country, index) => {
-    const currency = rates[country]
-    const rateBaseUsd = currency / usdRate
-    // Covert each currency/rate pair to a Gatsby Node
-    const nodeData = processRate(rateBaseUsd, countries[country], index)
+  Object.keys(countries).forEach(country => {
+    // Get rate for the country and convert it to base USD
+    const rate = rates[country]
+    const rateBaseUsd = rate / usdRate
+
+    // Convert each currency/rate to a Gatsby Node
+    const nodeData = processRate(rateBaseUsd, countries[country])
     // Use Gatsby's createNode helper to create a node from the node data
     createNode(nodeData)
   })
