@@ -9,6 +9,12 @@ class IndexPage extends Component {
   state = {
     netWorth: 1000,
   }
+
+  // Format number with commas for thousands
+  formatNumber = number => {
+    return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")
+  }
+
   handleInputChange = event => {
     const { name, value } = event.target
     this.setState({
@@ -43,11 +49,16 @@ class IndexPage extends Component {
             countryName,
           } = edge.node
           const { netWorth } = this.state
+          const conversion = rate * netWorth
 
           return (
-            <li key={currencyId}>
-              {emoji} {rate * netWorth} {currencyId} in {countryName} (
-              {currencyName})
+            // Add class millionaire if over a million
+            <li class={conversion > 1000000 && "millionaire"} key={currencyId}>
+              {emoji}{" "}
+              <strong>
+                {this.formatNumber(conversion)} {currencyId}
+              </strong>{" "}
+              in {countryName} ({currencyName})
             </li>
           )
         })}
