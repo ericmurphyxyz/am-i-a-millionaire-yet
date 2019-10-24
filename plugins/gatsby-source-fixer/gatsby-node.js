@@ -1,7 +1,9 @@
+const path = require("path")
+const fs = require("fs-extra")
 const fetch = require("node-fetch")
 const queryString = require("query-string")
 
-exports.sourceNodes = (
+exports.sourceNodes = async (
   { actions, createNodeId, createContentDigest },
   configOptions
 ) => {
@@ -11,8 +13,13 @@ exports.sourceNodes = (
   delete configOptions.plugins
 
   // Helper function that processes currency/rate pairs to match Gatsby's node structure
-  const processRate = (currency, rate, index) => {
-    const node = { currency, rate }
+  const processRate = (rate, country, index) => {
+    const node = {
+      currency: country.currencyId,
+      currencyName: country.currencyName,
+      rate,
+      emoji: country.emoji,
+    }
     const nodeId = createNodeId(`fixer-rate-${index}`)
     const nodeContent = JSON.stringify(node)
     const nodeData = Object.assign({}, node, {
@@ -33,21 +40,23 @@ exports.sourceNodes = (
   // Join apiOptions with the Pixabay API URL
   const apiUrl = `http://data.fixer.io/api/latest?${apiOptions}`
   // Gatsby expects sourceNodes to return a promise
-  return (
-    // Fetch a response from the apiUrl
-    fetch(apiUrl)
-      // Parse the response as JSON
-      .then(response => response.json())
-      .then(({ rates }) => {
-        const usdRate = rates["USD"]
+  // Fetch a response from the apiUrl
 
-        Object.keys(rates).forEach((currency, index) => {
-          const rateBaseUsd = rates[currency] / usdRate
-          // Covert each currency/rate pair to a Gatsby Node
-          const nodeData = processRate(currency, rateBaseUsd, index)
-          // Use Gatsby's createNode helper to create a node from the node data
-          createNode(nodeData)
-        })
-      })
+  // get json countries data
+  const countries = await fs.readJson(
+    path.resolve(__dirname, "./countries.json")
   )
+  const ratesResponse = await fetch(apiUrl)
+  const { rates } = await ratesResponse.json()
+
+  const usdRate = rates["USD"]
+
+  Object.keys(countries).forEach((country, index) => {
+    const currency = rates[country]
+    const rateBaseUsd = currency / usdRate
+    // Covert each currency/rate pair to a Gatsby Node
+    const nodeData = processRate(rateBaseUsd, countries[country], index)
+    // Use Gatsby's createNode helper to create a node from the node data
+    createNode(nodeData)
+  })
 }

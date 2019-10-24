@@ -2,7 +2,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -11,13 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-fixer`,
       options: {
