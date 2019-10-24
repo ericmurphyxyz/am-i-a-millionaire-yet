@@ -15,13 +15,14 @@ exports.sourceNodes = async (
   // Helper function that processes currency/rates to match Gatsby's node structure
   const processRate = (rate, country) => {
     // Destructure from country object
-    const { currencyId, currencyName, emoji } = country
+    const { currencyId, currencyName, name: countryName, emoji } = country
 
     // Create gatsby node
     const node = {
       currencyId,
       currencyName,
       rate,
+      countryName,
       emoji,
     }
     const nodeId = createNodeId(`fixer-rate-${currencyId}`)

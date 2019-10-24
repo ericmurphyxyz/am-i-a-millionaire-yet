@@ -2,9 +2,9 @@ import React, { Component } from "react"
 
 class Input extends Component {
   render() {
-    const { netWorth, handleInputChange } = this.props
+    const { netWorth, handleInputChange, handleSubmit } = this.props
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           <strong>What's your net worth?</strong>
           <input
@@ -14,6 +14,7 @@ class Input extends Component {
             onChange={handleInputChange}
           />
         </label>
+        <button type="submit">Calculate</button>
       </form>
     )
   }

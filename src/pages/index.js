@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,6 +16,10 @@ class IndexPage extends Component {
     })
   }
 
+  handleSubmit = event => {
+    event.preventDefault()
+  }
+
   render() {
     return (
       <Layout>
@@ -27,10 +32,44 @@ class IndexPage extends Component {
         <Input
           netWorth={this.state.netWorth}
           handleInputChange={this.handleInputChange}
+          handleSubmit={this.handleSubmit}
         />
+        {this.props.data.allFixerRate.edges.map(edge => {
+          const {
+            emoji,
+            currencyName,
+            currencyId,
+            rate,
+            countryName,
+          } = edge.node
+          const { netWorth } = this.state
+
+          return (
+            <li key={currencyId}>
+              {emoji} {rate * netWorth} {currencyId} in {countryName} (
+              {currencyName})
+            </li>
+          )
+        })}
       </Layout>
     )
   }
 }
+
+export const query = graphql`
+  query RatesQuery {
+    allFixerRate(sort: { fields: [rate], order: DESC }) {
+      edges {
+        node {
+          emoji
+          currencyName
+          currencyId
+          rate
+          countryName
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
