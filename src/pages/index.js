@@ -20,6 +20,7 @@ class IndexPage extends Component {
   state = {
     netWorth: 1000,
     inputValue: 0,
+    formSubmitted: false,
   }
 
   componentDidMount() {
@@ -32,6 +33,10 @@ class IndexPage extends Component {
     return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")
   }
 
+  checkMillionaire = number => {
+    return number >= 1000000
+  }
+
   handleInputChange = event => {
     const { value } = event.target
     this.setState({
@@ -42,11 +47,17 @@ class IndexPage extends Component {
   handleSubmit = event => {
     event.preventDefault()
 
-    this.setState({ netWorth: this.state.inputValue })
+    this.setState({
+      netWorth: this.state.inputValue,
+      formSubmitted: true,
+    })
   }
 
   render() {
     const { data } = this.props
+    const millionaireCurrencies = data.allFixerRate.edges.filter(({ node }) => {
+      return this.checkMillionaire(node.rate * this.state.netWorth)
+    }).length
     return (
       <Layout>
         <SEO title="Home" />
@@ -63,33 +74,43 @@ class IndexPage extends Component {
           handleInputChange={this.handleInputChange}
           handleSubmit={this.handleSubmit}
         />
-        <CurrencyList>
-          {data.allFixerRate.edges.map(edge => {
-            const {
-              emoji,
-              currencyName,
-              currencyId,
-              rate,
-              countryName,
-            } = edge.node
-            const { netWorth } = this.state
-            const conversion = rate * netWorth
+        {this.state.formSubmitted && (
+          <>
+            <p>
+              You're a millionaire in <strong>{millionaireCurrencies}</strong>{" "}
+              currencies! 💸 If you converted your money, you'd have:
+            </p>
+            <CurrencyList>
+              {data.allFixerRate.edges.map(({ node }) => {
+                const {
+                  emoji,
+                  currencyName,
+                  currencyId,
+                  rate,
+                  countryName,
+                } = node
+                const { netWorth } = this.state
+                const conversion = rate * netWorth
 
-            return (
-              // Add class millionaire if over a million
-              <li
-                class={conversion > 1000000 && "millionaire"}
-                key={currencyId}
-              >
-                <Emoji symbol={emoji} />{" "}
-                <strong>
-                  {this.formatNumber(conversion)} {currencyId}
-                </strong>{" "}
-                in {countryName} ({currencyName})
-              </li>
-            )
-          })}
-        </CurrencyList>
+                return (
+                  // Add class millionaire if over a million
+                  <li
+                    className={
+                      this.checkMillionaire(conversion) && "millionaire"
+                    }
+                    key={currencyId}
+                  >
+                    <Emoji symbol={emoji} />{" "}
+                    <strong>
+                      {this.formatNumber(conversion)} {currencyId}
+                    </strong>{" "}
+                    in {countryName} ({currencyName})
+                  </li>
+                )
+              })}
+            </CurrencyList>
+          </>
+        )}
       </Layout>
     )
   }
