@@ -9,6 +9,12 @@ import Emoji from "../components/emoji"
 class IndexPage extends Component {
   state = {
     netWorth: 1000,
+    inputValue: 0,
+  }
+
+  componentDidMount() {
+    // Set inputValue to net worth as default
+    this.setState({ inputValue: this.state.netWorth })
   }
 
   // Format number with commas for thousands
@@ -17,17 +23,20 @@ class IndexPage extends Component {
   }
 
   handleInputChange = event => {
-    const { name, value } = event.target
+    const { value } = event.target
     this.setState({
-      [name]: value,
+      inputValue: value,
     })
   }
 
   handleSubmit = event => {
     event.preventDefault()
+
+    this.setState({ netWorth: this.state.inputValue })
   }
 
   render() {
+    const { data } = this.props
     return (
       <Layout>
         <SEO title="Home" />
@@ -40,11 +49,11 @@ class IndexPage extends Component {
           <Emoji symbol="🌏" />
         </p>
         <Input
-          netWorth={this.state.netWorth}
+          inputValue={this.state.inputValue}
           handleInputChange={this.handleInputChange}
           handleSubmit={this.handleSubmit}
         />
-        {this.props.data.allFixerRate.edges.map(edge => {
+        {data.allFixerRate.edges.map(edge => {
           const {
             emoji,
             currencyName,
