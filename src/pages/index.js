@@ -1,10 +1,20 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Input from "../components/input"
 import Emoji from "../components/emoji"
+
+const CurrencyList = styled.ul`
+  list-style: none;
+  margin: 0;
+
+  .millionaire {
+    color: forestgreen;
+  }
+`
 
 class IndexPage extends Component {
   state = {
@@ -53,28 +63,33 @@ class IndexPage extends Component {
           handleInputChange={this.handleInputChange}
           handleSubmit={this.handleSubmit}
         />
-        {data.allFixerRate.edges.map(edge => {
-          const {
-            emoji,
-            currencyName,
-            currencyId,
-            rate,
-            countryName,
-          } = edge.node
-          const { netWorth } = this.state
-          const conversion = rate * netWorth
+        <CurrencyList>
+          {data.allFixerRate.edges.map(edge => {
+            const {
+              emoji,
+              currencyName,
+              currencyId,
+              rate,
+              countryName,
+            } = edge.node
+            const { netWorth } = this.state
+            const conversion = rate * netWorth
 
-          return (
-            // Add class millionaire if over a million
-            <li class={conversion > 1000000 && "millionaire"} key={currencyId}>
-              <Emoji symbol={emoji} />{" "}
-              <strong>
-                {this.formatNumber(conversion)} {currencyId}
-              </strong>{" "}
-              in {countryName} ({currencyName})
-            </li>
-          )
-        })}
+            return (
+              // Add class millionaire if over a million
+              <li
+                class={conversion > 1000000 && "millionaire"}
+                key={currencyId}
+              >
+                <Emoji symbol={emoji} />{" "}
+                <strong>
+                  {this.formatNumber(conversion)} {currencyId}
+                </strong>{" "}
+                in {countryName} ({currencyName})
+              </li>
+            )
+          })}
+        </CurrencyList>
       </Layout>
     )
   }

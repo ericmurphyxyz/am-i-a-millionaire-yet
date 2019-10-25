@@ -16,6 +16,7 @@ module.exports = {
         access_key: process.env.FIXER_API_KEY,
       },
     },
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
