@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Input from "../components/input"
+import Emoji from "../components/emoji"
 
 class IndexPage extends Component {
   state = {
@@ -30,10 +31,13 @@ class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Home" />
-        <h1>Am I a Millionaire Yet? 🤑</h1>
+        <h1>
+          Am I a Millionaire Yet? <Emoji symbol="🤑" />
+        </h1>
         <p>
-          Enter your net worth in USD 🇺🇸 and find out when you'll be a
-          millionaire in currencies all over the world 🌏
+          Enter your net worth in USD <Emoji symbol="🇺🇸" /> and find out when
+          you'll be a millionaire in currencies all over the world{" "}
+          <Emoji symbol="🌏" />
         </p>
         <Input
           netWorth={this.state.netWorth}
@@ -54,7 +58,7 @@ class IndexPage extends Component {
           return (
             // Add class millionaire if over a million
             <li class={conversion > 1000000 && "millionaire"} key={currencyId}>
-              {emoji}{" "}
+              <Emoji symbol={emoji} />{" "}
               <strong>
                 {this.formatNumber(conversion)} {currencyId}
               </strong>{" "}
