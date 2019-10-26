@@ -7,7 +7,11 @@ class Input extends Component {
       <form onSubmit={handleSubmit}>
         <label>
           <strong>What's your net worth?</strong>
-          <input type="text" value={inputValue} onChange={handleInputChange} />
+          <input
+            type="number"
+            value={inputValue}
+            onChange={handleInputChange}
+          />
         </label>
         <button type="submit">Calculate</button>
       </form>
