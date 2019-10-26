@@ -1,33 +1,17 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Emoji from "../components/emoji"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header>
+    <h1>
+      {siteTitle} <Emoji symbol="🤑" />
+    </h1>
+    <p>
+      Enter your net worth in USD <Emoji symbol="🇺🇸" /> and find out when you'll
+      be a millionaire in currencies all over the world <Emoji symbol="🌏" />
+    </p>
   </header>
 )
 

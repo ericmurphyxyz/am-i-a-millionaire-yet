@@ -3,7 +3,8 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Header from "../components/header"
+import Footer from "../components/footer"
 import Input from "../components/input"
 import Emoji from "../components/emoji"
 
@@ -55,9 +56,6 @@ class IndexPage extends Component {
 
   render() {
     const { data } = this.props
-    // Get build time and extract the date from the ISO string
-    const buildTimeISO = new Date(data.site.buildTime).toISOString()
-    const buildTime = buildTimeISO.substring(0, buildTimeISO.indexOf("T"))
     // Get number of currencies you're a millionaire in
     const millionaireCurrencies = data.allFixerRate.edges.filter(({ node }) => {
       return this.checkMillionaire(node.rate * this.state.netWorth)
@@ -65,41 +63,13 @@ class IndexPage extends Component {
 
     return (
       <Layout>
-        <SEO title="Home" />
-        <h1>
-          Am I a Millionaire Yet? <Emoji symbol="🤑" />
-        </h1>
-        <p>
-          Enter your net worth in USD <Emoji symbol="🇺🇸" /> and find out when
-          you'll be a millionaire in currencies all over the world{" "}
-          <Emoji symbol="🌏" />
-        </p>
-        <p>
-          <small>
-            Currency rates last updated {buildTime}. Made by{" "}
-            <a
-              href="https://ericnmurphy.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Eric Murphy
-            </a>
-            . Check out the source code on{" "}
-            <a
-              href="http://github.com/ericnmurphy/am-i-a-millionaire-yet"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            !
-          </small>
-        </p>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <Input
           inputValue={this.state.inputValue}
           handleInputChange={this.handleInputChange}
           handleSubmit={this.handleSubmit}
         />
+        <Footer buildTime={data.site.buildTime} />
         {this.state.formSubmitted && (
           <>
             <p>
@@ -157,6 +127,9 @@ export const query = graphql`
     }
     site {
       buildTime
+      siteMetadata {
+        title
+      }
     }
   }
 `
