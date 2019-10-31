@@ -95,7 +95,7 @@ class IndexPage extends Component {
                     // Add class millionaire if over a million
                     <li
                       className={
-                        this.checkMillionaire(conversion) && "millionaire"
+                        this.checkMillionaire(conversion) ? "millionaire" : ""
                       }
                       key={currencyId}
                     >

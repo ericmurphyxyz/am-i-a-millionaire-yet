@@ -11,7 +11,7 @@ class Input extends Component {
     const { inputValue, handleInputChange, handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
-        <InputLabel for="net-worth">What's your net worth?</InputLabel>
+        <InputLabel htmlFor="net-worth">What's your net worth?</InputLabel>
         <input
           type="number"
           id="net-worth"
