@@ -63,50 +63,54 @@ class IndexPage extends Component {
 
     return (
       <Layout>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Input
-          inputValue={this.state.inputValue}
-          handleInputChange={this.handleInputChange}
-          handleSubmit={this.handleSubmit}
-        />
-        <Footer buildTime={data.site.buildTime} />
-        {this.state.formSubmitted && (
-          <>
-            <p>
-              You're a millionaire in <strong>{millionaireCurrencies}</strong>{" "}
-              currencies! 💸 If you converted your money, you'd have:
-            </p>
-            <CurrencyList>
-              {data.allFixerRate.edges.map(({ node }) => {
-                const {
-                  emoji,
-                  currencyName,
-                  currencyId,
-                  rate,
-                  countryName,
-                } = node
-                const { netWorth } = this.state
-                const conversion = rate * netWorth
+        <section>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <Input
+            inputValue={this.state.inputValue}
+            handleInputChange={this.handleInputChange}
+            handleSubmit={this.handleSubmit}
+          />
+          <Footer buildTime={data.site.buildTime} />
+        </section>
+        <section>
+          {this.state.formSubmitted && (
+            <>
+              <p>
+                You're a millionaire in <strong>{millionaireCurrencies}</strong>{" "}
+                currencies! 💸 If you converted your money, you'd have:
+              </p>
+              <CurrencyList>
+                {data.allFixerRate.edges.map(({ node }) => {
+                  const {
+                    emoji,
+                    currencyName,
+                    currencyId,
+                    rate,
+                    countryName,
+                  } = node
+                  const { netWorth } = this.state
+                  const conversion = rate * netWorth
 
-                return (
-                  // Add class millionaire if over a million
-                  <li
-                    className={
-                      this.checkMillionaire(conversion) && "millionaire"
-                    }
-                    key={currencyId}
-                  >
-                    <Emoji symbol={emoji} />{" "}
-                    <strong>
-                      {this.formatNumber(conversion)} {currencyId}
-                    </strong>{" "}
-                    in {countryName} ({currencyName})
-                  </li>
-                )
-              })}
-            </CurrencyList>
-          </>
-        )}
+                  return (
+                    // Add class millionaire if over a million
+                    <li
+                      className={
+                        this.checkMillionaire(conversion) && "millionaire"
+                      }
+                      key={currencyId}
+                    >
+                      <Emoji symbol={emoji} />{" "}
+                      <strong>
+                        {this.formatNumber(conversion)} {currencyId}
+                      </strong>{" "}
+                      in {countryName} ({currencyName})
+                    </li>
+                  )
+                })}
+              </CurrencyList>
+            </>
+          )}
+        </section>
       </Layout>
     )
   }
