@@ -20,13 +20,8 @@ const CurrencyList = styled.ul`
 class IndexPage extends Component {
   state = {
     netWorth: 1000,
-    inputValue: 0,
+    inputValue: 1000,
     formSubmitted: false,
-  }
-
-  componentDidMount() {
-    // Set inputValue to net worth as default
-    this.setState({ inputValue: this.state.netWorth })
   }
 
   // Format number with commas for thousands
