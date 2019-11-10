@@ -9,6 +9,7 @@ const InputLabel = styled.label`
 
 const InputWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `
 
 const InputPrepend = styled.div`
@@ -18,7 +19,8 @@ const InputPrepend = styled.div`
   span {
     display: flex;
     align-items: center;
-    padding: 0.15rem 0.5rem;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 10px;
     background-color: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -28,16 +30,23 @@ const InputPrepend = styled.div`
 `
 
 const NumberInput = styled.input`
-  padding: 0.15rem 0.375rem;
+  padding: 0.25rem 0.375rem;
   margin-right: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+
+  @media screen and (max-width: 480px) {
+    flex-grow: 1;
+    margin-right: 0;
+  }
 `
 
 const Button = styled.button`
-  padding: 0.15rem 0.75rem;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 10px;
   color: #fff;
   background-color: #6c757d;
   border: 1px solid #6c757d;
@@ -48,6 +57,11 @@ const Button = styled.button`
   &:hover {
     background-color: #5a6268;
     border-color: #5a6268;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    flex-basis: 100%;
   }
 `
 
