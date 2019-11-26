@@ -40,17 +40,24 @@ exports.sourceNodes = async (
     return nodeData
   }
 
-  // Convert the options object into a query string
-  const apiOptions = queryString.stringify(configOptions)
-  const apiUrl = `http://data.fixer.io/api/latest?${apiOptions}`
+  // Get countries from JSON
+  const getCountries = () => {
+    return fs.readJson(path.resolve(__dirname, "./countries.json"))
+  }
 
-  // Get json countries data
-  const countries = await fs.readJson(
-    path.resolve(__dirname, "./countries.json")
-  )
-  // Get rates from Fixer API
-  const ratesResponse = await fetch(apiUrl)
-  const { rates } = await ratesResponse.json()
+  // Get rates as JSON from fixer.io
+  const getRates = () => {
+    // Get the API key from the options
+    const apiOptions = queryString.stringify(configOptions)
+    const apiUrl = `http://data.fixer.io/api/latest?${apiOptions}`
+
+    return fetch(apiUrl).then(response => {
+      return response.json()
+    })
+  }
+
+  // Get countries and rates concurrently
+  const [countries, { rates }] = await Promise.all([getCountries(), getRates()])
 
   // Get the USD rate because Fixer returns base EUR by default
   const usdRate = rates["USD"]
