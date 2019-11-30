@@ -7,6 +7,8 @@ module.exports = {
     title: `Am I a Millionaire Yet?`,
     description: `Check how many countries you're a millionaire in the local currency 🤑`,
     author: `@ericnmurphy`,
+    url: `https://amiamillionaireyet.netlify.com`,
+    image: `/images/twitter-card.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

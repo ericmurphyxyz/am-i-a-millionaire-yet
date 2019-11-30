@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta }) {
+function SEO({ lang, meta }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,14 +19,15 @@ function SEO({ description, lang, meta }) {
             title
             description
             author
+            url
+            image
           }
         }
       }
     `
   )
 
-  const { title } = site.siteMetadata
-  const metaDescription = description || site.siteMetadata.description
+  const { title, description, author, url, image } = site.siteMetadata
 
   return (
     <Helmet
@@ -37,7 +38,7 @@ function SEO({ description, lang, meta }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:title`,
@@ -45,7 +46,7 @@ function SEO({ description, lang, meta }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -53,11 +54,11 @@ function SEO({ description, lang, meta }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: author,
         },
         {
           name: `twitter:title`,
@@ -65,7 +66,11 @@ function SEO({ description, lang, meta }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
+        },
+        {
+          name: `twitter:image`,
+          content: `${url}${image}`,
         },
       ].concat(meta)}
     />
@@ -75,11 +80,9 @@ function SEO({ description, lang, meta }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
 }
