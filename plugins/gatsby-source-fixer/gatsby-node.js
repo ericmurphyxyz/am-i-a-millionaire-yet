@@ -46,14 +46,13 @@ exports.sourceNodes = async (
   }
 
   // Get rates as JSON from fixer.io
-  const getRates = () => {
+  const getRates = async () => {
     // Get the API key from the options
     const apiOptions = queryString.stringify(configOptions)
     const apiUrl = `http://data.fixer.io/api/latest?${apiOptions}`
 
-    return fetch(apiUrl).then(response => {
-      return response.json()
-    })
+    const response = await fetch(apiUrl)
+    return response.json()
   }
 
   // Get countries and rates concurrently
